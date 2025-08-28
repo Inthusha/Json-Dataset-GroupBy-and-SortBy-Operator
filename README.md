@@ -192,14 +192,14 @@ http://localhost:8080
 
 **Insert Single Record**  
 Method: POST  
-URL: `http://localhost:8080/api/dataset/users/record`  
+URL: `http://localhost:8080/api/dataset/record`  
 Body: raw JSON (application/json)
 
     {"id":1,"name":"John Doe","age":30,"department":"Engineering"}
 
 **Insert Bulk Records**  
 Method: POST  
-URL: `http://localhost:8080/api/dataset/users/record`  
+URL: `http://localhost:8080/api/dataset/records`  
 Body: raw JSON array
 
     [
@@ -209,11 +209,11 @@ Body: raw JSON array
 
 **Query with Group-By**  
 Method: GET  
-URL: `http://localhost:8080/api/dataset/users/query?groupBy=department`
+URL: `http://localhost:8080/api/dataset/query?groupBy=department`
 
 **Query with Sort-By**  
 Method: GET  
-URL: `http://localhost:8080/api/dataset/users/query?sortBy=age&order=asc`
+URL: `http://localhost:8080/api/dataset/query?sortBy=age&order=asc`
 
 **Error Handling**  
 - Empty JSON: 400 BAD REQUEST  
